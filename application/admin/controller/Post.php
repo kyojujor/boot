@@ -8,12 +8,12 @@
 namespace app\admin\controller;
 use think\Controller;
 
-Class Index extends Controller
+Class Post extends Controller
 {
-    public function index(){
-        return $this->fetch();
+    public function postList(){
+        return $this->fetch('postlist');
     }
-    public function home(){
+    public function addpost(){
         return $this->fetch();
     }
 }
